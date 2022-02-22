@@ -79,8 +79,8 @@ if (isset($_GET['delete'])) {
             <td><?php echo $row['email']; ?></td>
             <td><?php echo $row['phone']; ?></td>
             <td>
-               <a href="update.php?edit=<?php echo $row['id']; ?>"> <i class="fas fa-edit"></i> edit </a>
-               <a href="index.php?delete=<?php echo $row['id']; ?>"> <i class="fas fa-trash"></i> delete </a>
+               <a href="update.php?edit=<?php echo $row['id']; ?>"> edit </a>
+               <a href="index.php?delete=<?php echo $row['id']; ?>"> delete </a>
             </td>
          </tr>
       <?php } ?>
