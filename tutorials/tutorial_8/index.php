@@ -50,7 +50,7 @@ if (isset($_GET['delete'])) {
             }
         }
         ?>
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
+        <form action="index.php" method="post" enctype="multipart/form-data">
         <input type="text" placeholder="Enter username" name="user_name"><br><br>
         <input type="password" placeholder="Enter password" name="password"><br><br>
         <input type="email" placeholder="Enter email" name="email"><br><br>
