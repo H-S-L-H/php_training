@@ -50,7 +50,7 @@ if (isset($_GET['delete'])) {
             }
         }
         ?>
-        <form action="<?php $_SERVER['PHP_SELF'] ?>" method="post" enctype="multipart/form-data">
+        <form action="index.php" method="post" enctype="multipart/form-data">
         <input type="text" placeholder="Enter username" name="user_name"><br><br>
         <input type="password" placeholder="Enter password" name="password"><br><br>
         <input type="email" placeholder="Enter email" name="email"><br><br>
@@ -79,8 +79,8 @@ if (isset($_GET['delete'])) {
             <td><?php echo $row['email']; ?></td>
             <td><?php echo $row['phone']; ?></td>
             <td>
-               <a href="update.php?edit=<?php echo $row['id']; ?>"> <i class="fas fa-edit"></i> edit </a>
-               <a href="index.php?delete=<?php echo $row['id']; ?>"> <i class="fas fa-trash"></i> delete </a>
+               <a href="update.php?edit=<?php echo $row['id']; ?>"> edit </a>
+               <a href="index.php?delete=<?php echo $row['id']; ?>"> delete </a>
             </td>
          </tr>
       <?php } ?>
