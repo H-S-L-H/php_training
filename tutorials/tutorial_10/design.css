@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.form-sec {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+h2,
+h3 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+input[type=text], input[type=password], input[type=email] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit], input[type=button] {
+  background-color: #0468aa;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4577a0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.edit-btn,
+.delete-btn,
+.goback-btn,
+.logout-btn {
+  background-color: #eb7f41;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 3px;
+  font-size: 15px;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.goback-btn,
+.logout-btn {
+  display: inline-block;
+  width: 100px;
+}
+
+.logout-btn {
+  margin: 0px 195px;
+}
