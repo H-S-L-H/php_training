@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 interface StudentDaoInterface {
   public function getstudent();
 
+  public function getStudentById($id);
+
   public function getmajor();
 
   public function store(Request $request);

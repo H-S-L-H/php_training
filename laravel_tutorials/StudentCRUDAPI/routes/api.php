@@ -21,5 +21,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::get('students','Api\StudentController@getStudents');
 Route::get('student/{id}','Api\StudentController@getStudentById');
 Route::post('student','Api\StudentController@createStudent');
-Route::put('student/{student}','Api\StudentController@updateStudent');
-Route::delete('student/{student}','Api\StudentController@deleteStudent');
+Route::put('student/edit/{id}','Api\StudentController@updateStudent');
+Route::delete('student/delete/{id}','Api\StudentController@deleteStudent');

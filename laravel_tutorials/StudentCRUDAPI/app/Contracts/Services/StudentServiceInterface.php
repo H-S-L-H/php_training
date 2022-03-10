@@ -8,6 +8,8 @@ interface StudentServiceInterface
 {
   public function getstudent();
 
+  public function getStudentById($id);
+
   public function getmajor();
 
   public function store(Request $request);
@@ -23,5 +25,4 @@ interface StudentServiceInterface
   public function import();
 
   public function studentsSearch($search);
-
 }

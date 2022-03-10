@@ -23,6 +23,11 @@ class StudentService implements StudentServiceInterface
         return $this->studentDao->getstudent();
     }
 
+    public function getStudentById($id)
+    {
+        return $this->studentDao->getStudentById($id);
+    }
+
     public function getmajor()
     {
         return $this->studentDao->getmajor();

@@ -17,6 +17,10 @@ class StudentDao implements StudentDaoInterface {
         return Student::with('major')->get();
     }
 
+    public function getStudentById($id){
+      return Student::with('major')->find($id);
+  }
+
     public function getmajor(){
       return Major::with('student')->get();
     }
